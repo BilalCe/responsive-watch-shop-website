@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Title</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#galery">Galery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+    <!-- First image -->
+    <div class="pimg1">
+      <div class="ptext">
+        <span class="border"> Luxury Watches </span><br />
+      </div>
+    </div>
+    <!-- About us -->
+    <section id="aboutus" class="section section-dark">
+      <h2>About us</h2>
+      <div class="grid-2">
+        <div class="bx1">
+          <img class="img-a" src="images/img1.jpg" alt="" />
+        </div>
+        <div class="bx2">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+            laborum a maxime ratione animi assumenda perspiciatis, beatae fuga
+            eveniet totam quae autem possimus rem sed corrupti earum architecto
+            molestias reiciendis.
+          </p>
+          <a class="btn" href="#" role="button">Read more</a>
+        </div>
+      </div>
+      <!-- Second image -->
+    </section>
+    <div class="pimg2">
+      <div class="ptext"><span class="border trans"> Watch</span></div>
+    </div>
+    <!-- Products -->
+    <section id="products" class="section section-light">
+      <h2>Our watches</h2>
+      <!-- Carousel -->
+      <div class="carousel">
+        <button class="carousel__arrow" id="js-left">
+          <svg viewBox="0 0 19 31" width="30" height="30">
+            <path
+              id="left-arrow"
+              d="M15.5,3.5l-12,12,12,12"
+              transform="translate(0)"
+              fill="none"
+              stroke="#645a57"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="7"
+            />
+          </svg>
+        </button>
+        <div class="carousel-items">
+          <!-- carousel item 01 -->
+          <figure class="carousel__item">
+            <img
+              class="slika"
+              src="images/watches/img_55.jpg"
+              class="carousel__image"
+            />
+            <figcaption class="carousel__caption">
+              <h3 class="carousel__title">Luxury watch</h3>
+              <p class="carousel__description">
+                <a class="btn-dark" href="#" role="button">More</a>
+              </p>
+            </figcaption>
+          </figure>
+          <!-- carousel item 02 -->
+          <figure class="carousel__item">
+            <img
+              class="slika"
+              src="images/watches/img_55.jpg"
+              class="carousel__image"
+            />
+            <figcaption class="carousel__caption">
+              <h3 class="carousel__title">Luxury watch</h3>
+              <p class="carousel__description">
+                <a class="btn-dark" href="#" role="button">More</a>
+              </p>
+            </figcaption>
+          </figure>
+          <!-- carousel item 03 -->
+          <figure class="carousel__item">
+            <img
+              class="slika"
+              src="images/watches/img_55.jpg"
+              class="carousel__image"
+            />
+            <figcaption class="carousel__caption">
+              <h3 class="carousel__title">Luxury watch</h3>
+              <p class="carousel__description">
+                <a class="btn-dark" href="#" role="button">More</a>
+              </p>
+            </figcaption>
+          </figure>
+          <!-- carousel item 04 -->
+          <figure class="carousel__item">
+            <img
+              class="slika"
+              src="images/watches/img_55.jpg"
+              class="carousel__image"
+            />
+            <figcaption class="carousel__caption">
+              <h3 class="carousel__title">Luxury watch</h3>
+              <p class="carousel__description">
+                <a class="btn-dark" href="#" role="button">More</a>
+              </p>
+            </figcaption>
+          </figure>
+          <!-- carousel item 05 -->
+          <figure class="carousel__item">
+            <img
+              class="slika"
+              src="images/watches/img_55.jpg"
+              class="carousel__image"
+            />
+            <figcaption class="carousel__caption">
+              <h3 class="carousel__title">Luxury watch</h3>
+              <p class="carousel__description">
+                <a class="btn-dark" href="#" role="button">More</a>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <button class="carousel__arrow" id="js-right">
+          <svg viewBox="0 0 19 31" width="30" height="30">
+            <path
+              d="M3.5,27.49l12-12-12-12"
+              transform="translate(0)"
+              fill="none"
+              stroke="#645a57"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="7"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Image three -->
+    </section>
+    <div class="pimg3">
+      <div class="ptext"><span class="border trans"> Watches </span></div>
+    </div>
+    <!-- Galery-->
+    <section id="galery" class="section section-dark">
+      <h2>Galery</h2>
+      <div class="gall">
+        <a
+          href="images/galerija/img_1.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #1"
+        >
+          <img class="img-gal " src="images/galerija/img_1.jpg" alt="" />
+        </a>
+
+        <a
+          href="images/galerija/img_2.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #2"
+        >
+          <img class="img-gal  " src="images/galerija/img_2.jpg" alt="" />
+        </a>
+        <a
+          href="images/galerija/img_3.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #1"
+        >
+          <img
+            class="img-gal img-mob img-tab"
+            src="images/galerija/img_3.jpg"
+            alt=""
+          />
+        </a>
+
+        <a
+          href="images/galerija/img_4.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #2"
+        >
+          <img
+            class="img-gal img-mob img-tab"
+            src="images/galerija/img_4.jpg"
+            alt=""
+          />
+        </a>
+        <a
+          href="images/galerija/img_5.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #1"
+        >
+          <img
+            class="img-gal img-mob img-tab"
+            src="images/galerija/img_5.jpg"
+            alt=""
+          />
+        </a>
+
+        <a
+          href="images/galerija/img_6.jpg"
+          data-fancybox="gallery"
+          data-caption="Caption #2"
+        >
+          <img
+            class="img-gal img-mob img-tab"
+            src="images/galerija/img_6.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+    </section>
+    <!-- Image four -->
+    <div class="pimg4">
+      <div class="ptext"><span class="border trans"> Watches</span></div>
+    </div>
+    <!-- Contact -->
+    <section id="contact" class="section section-light">
+      <h2>Contact</h2>
+      <article>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45194.08384785667!2d18.3812096!3d43.85423359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sbs!2sba!4v1544302301445"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ut
+            laborum repudiandae tenetur consequuntur doloremque.
+          </p>
+
+          <p>Adress: City, Country</p>
+          <p>Tel: +555 555 555</p>
+          <p>E-mail: john@doe.com</p>
+        </div>
+      </article>
+    </section>
+    <!-- Image five -->
+    <div class="pimg1">
+      <div class="ptext"><span class="border"> Luxury watches </span></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

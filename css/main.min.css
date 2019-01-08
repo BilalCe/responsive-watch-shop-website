@@ -1,0 +1,177 @@
+.section__image,
+footer .logo {
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.section--beer .section__title,
+.section--beer .section__subtitle,
+.section--brewery .section__title,
+.section--brewery .section__subtitle {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.section__image.is-showing,
+footer .logo.is-showing {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.section--beer .section__title.is-showing,
+.section--beer .section__subtitle.is-showing,
+.section--brewery .section__title.is-showing,
+.section--brewery .section__subtitle.is-showing {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.section--beer {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.section--beer .section__about {
+  max-width: 37rem;
+  margin: auto;
+}
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 3rem auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.carousel button {
+  all: unset;
+  background: transparent;
+  cursor: pointer;
+}
+.carousel button:active {
+  background: #ffffff;
+}
+.carousel button svg path {
+  stroke: #a3b9bf;
+}
+.carousel button:hover path {
+  stroke: #414a4d;
+}
+.carousel-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  position: relative;
+}
+.carousel-items::after,
+.carousel-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.carousel-items::after {
+  left: calc(50% + 7rem);
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#fff),
+    to(#ffffff66)
+  );
+  background: linear-gradient(to left, #fff, #ffffff66);
+  -webkit-box-shadow: -5px 0px 100px #ffffff99;
+  box-shadow: -5px 0px 100px #ffffff99;
+}
+.carousel-items::before {
+  right: calc(50% + 7rem);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#fff),
+    to(#ffffff66)
+  );
+  background: linear-gradient(to right, #fff, #ffffff66);
+  -webkit-box-shadow: 5px 0px 100px #ffffff99;
+  box-shadow: 5px 0px 100px #ffffff99;
+}
+figure {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 15rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.carousel__caption {
+  font-family: "Passion One", sans-serif;
+  line-height: 1.5;
+  display: none;
+}
+.carousel__title {
+  font-size: 2rem;
+}
+.carousel__subtitle {
+  font-size: 1.8rem;
+  line-height: 0.8;
+}
+.carousel__subtitle span {
+  font-size: 1.3rem;
+  display: block;
+  text-transform: uppercase;
+}
+.carousel__description {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  color: #89807a;
+  font-weight: 400;
+}
+
+.section__title,
+.section__subtitle {
+  font-family: "Passion One", sans-serif;
+  line-height: 1;
+}
+.section__title {
+  font-size: 4.75rem;
+  color: #414a4d;
+}
+.section__subtitle {
+  font-size: 1.69rem;
+  color: #a3b9bf;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+}
+/*# sourceMappingURL=main.min.css.map */
